@@ -1,4 +1,4 @@
-ciudadanos_registrados = []
+ciudadanos_registrados = [{'nombre': 'juan perez', 'edad': '45', 'nif': '12345678asdf'}.{'nombre': 'juan gomez', 'edad': '45', 'nif': '12345678asdf'},{'nombre': 'juan perez', 'edad': '45', 'nif': '12345678asdf'}]
 def menu_principal():
     print("*"*50)
     print("Ingrese una opcion : ")
@@ -6,9 +6,8 @@ def menu_principal():
     print("2) Buscar : ")
     print("3) Crear archivo")
     print("4) Salir: \n ")
-
+#
 def validaDatos(data):
-
     if len(data['nombre'])<0:
         return [False,"Nombre invalido"]
     else:
@@ -41,4 +40,5 @@ while True :
             print("Datos incorrectos",res[1])
     if opcion =="2":
         print(ciudadanos_registrados)
+        
         
